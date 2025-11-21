@@ -40,8 +40,8 @@ const NavBar = () => {
 
             <div className='block lg:hidden p-5'>
                 <div className='bg-amber-400 flex justify-between items-center p-3 rounded-lg'>
-                        <h1 className='font-bold text-2xl'>ZNX-JX</h1>
-                        <Menu onClick={openMenu} />  
+                    <h1 className='font-bold text-2xl'>ZNX-JX</h1>
+                    <Menu onClick={openMenu} />  
                 </div>
                 <div className={`${isMenuOpen ? 'left-0' : 'left-full'} duration-300 absolute inset-0 p-6 h-screen bg-amber-400`}>
                     <div className='flex justify-between'>
