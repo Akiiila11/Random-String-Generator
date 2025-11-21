@@ -33,18 +33,8 @@ const NavBar = () => {
                             <IoSearchSharp className='text-black' />
                             <input type="text" placeholder='search' value={query} onChange={(e) => setQuery(e.target.value)} className='outline-0' /> 
                         </div>
-
-                        {query && (
-                            <div className='absolute top-full bg-white shadow-2xl rounded-lg mt-2 p-4 px-11 space-y-4 z-50'> 
-                                {product.map((element)=> (
-                                    <div key={element.id}>
-                                       <Link to='#' className='hover:underline'>{element.name}</Link> 
-                                    </div>
-                                ))}
-                            </div>
-                        )}
                     </section>
-                    <button className='bg-black text-white px-3 py-2 rounded-lg'>Contact Us</button>          
+                    <button className='bg-black text-white px-3 py-2 rounded-lg cursor-pointer'>Contact Us</button>          
                 </div>
             </div>
 

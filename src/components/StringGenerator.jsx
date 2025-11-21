@@ -26,8 +26,9 @@ const StringGenerator = () => {
     return (
         <div className='flex flex-col items-center justify-center text-center h-150'>
             <h1 className='font-bold  text-4xl '>Random String Generator</h1>
-            <p className='bg-amber-400 shadow-lg rounded-lg text-lg px-20 py-5 mt-8'>{randomString}</p>
-            <button onClick={()=> setRandomString(generateRandomString())} className='bg-black text-white flex items-center px-2 py-2 rounded-lg mt-5 gap-2'>Generate New<RiAiGenerateText /></button>
+            <p className='text-gray-300 mt-3'>Click the button to generate the new string!</p>
+            <p className='bg-white shadow-lg rounded-lg text-lg px-20 py-5 mt-8'>{randomString}</p>
+            <button onClick={()=> setRandomString(generateRandomString())} className='bg-black text-white flex items-center px-2 py-3 rounded-lg mt-6 gap-2 cursor-pointer'>Generate New<RiAiGenerateText /></button>
 
         </div>
     );
